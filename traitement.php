@@ -7,9 +7,9 @@
 <body>
 <?php
     //Récupération des données
-    $nom = $_GET["txtlogin"];
-    $mdp = $_GET["txtmdp"];
-    $couleurs = $_GET["couleur"];
+    $nom = $_POST["txtlogin"];
+    $mdp = $_POST["txtmdp"];
+    $couleurs = $_POST["couleur"];
     
     //Traitements des données
     echo "Votre nom d'utilisateur est : ".$nom."<br/> Votre mot de passe est : " .$mdp;
