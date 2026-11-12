@@ -24,7 +24,6 @@ if (isset($_GET['activite']) && !empty($_GET['activite'])) {
         <select name="activite" id="activite" onchange="this.form.submit()">
             <option value="">-- Choix --</option>
             <?php foreach ($activites as $act): ?>
-                <!-- On garde l'option sélectionnée visible après le rechargement -->
                 <option value="<?= htmlspecialchars($act['numero']) ?>" <?= (isset($_GET['activite']) && $_GET['activite'] == $act['numero']) ? 'selected' : '' ?>>
                     <?= htmlspecialchars($act['libelle']) ?>
                 </option>
