@@ -10,8 +10,8 @@ echo "<table>";
     for ($i=0;$i<=11;$i++)
         { 
            $res=8*$i;
-           echo "<tr><td>8 x ".$i." = </td><td>".$res."
-            
+           echo "<tr><td>8 x ".$i." = </td><td>".$res."</td></tr>";
+
         }
  echo "</table>";
 ?>
