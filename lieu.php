@@ -7,7 +7,7 @@
 <body>
     <?php
     require_once("connexion.php");
-    $stmt=$connexion->prepare('SELECT * FROM lieu WHERE codePostal LIKE "17%";');
+    $stmt=$connexion->prepare('SELECT nom, prenom, adresse FROM lieu WHERE codePostal LIKE "33000";');
     $stmt->setFetchMode(PDO::FETCH_OBJ);
     $stmt->execute();
 
